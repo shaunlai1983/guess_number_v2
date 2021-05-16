@@ -3,12 +3,10 @@ start = input('輸入開始值')
 end = input('輸入結束值')
 start = int(start)
 end = int(end)
-r = random.randint(start, end) #取用random模組內的randint功能.範圍1 -100
-                            #random + int的意思為隨機的整數的意思
-                            #從這邊就產生了一個r在這個世界上
+r = random.randint(start, end) #取用start,end變數.用在randint的定義範圍內
 count = 0                   #變數來計算輸入次數
 while True:                 #進入while 並且不斷重複
-	num = input('猜猜看數字 1 - 100:')
+	num = input('猜猜看數字:')
 	num = int(num)    #將input的字串型別轉換為整數
 	if num == r:
 		count += 1  #count = count + 1 的快寫法
